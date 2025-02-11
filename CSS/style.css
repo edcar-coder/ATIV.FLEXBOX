@@ -1,0 +1,166 @@
+/* Variáveis CSS */
+:root {
+    --cor-primaria: #4CAF50;
+    --cor-secundaria: #F4F4F4;
+    --cor-texto: #333;
+    --cor-destaque: #FFC107;
+    --transicao-suave: 0.3s ease-in-out;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-texto);
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Cabeçalho */
+header {
+    background-color: var(--cor-primaria);
+    padding: 20px 0;
+    color: white;
+}
+
+header h1 {
+    margin-left: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Seção de Introdução */
+#introducao {
+    text-align: center;
+    padding: 40px 0;
+}
+
+#introducao img {
+    width: 200px;
+    margin-top: 20px;
+}
+
+/* Seção de Funcionalidades */
+#funcionalidades {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 0;
+}
+
+.card {
+    background-color: white;
+    width: 30%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: var(--transicao-suave);
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card h3 {
+    color: var(--cor-primaria);
+}
+
+.card p {
+    color: var(--cor-texto);
+}
+
+
+#login {
+    background-color: var(--cor-secundaria);
+    padding: 40px 0;
+    text-align: center;
+}
+
+#login form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#login label {
+    margin: 10px 0;
+}
+
+#login input {
+    padding: 10px;
+    margin: 10px 0;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#login button {
+    padding: 10px 20px;
+    background-color: var(--cor-primaria);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: var(--transicao-suave);
+}
+
+#login button:hover {
+    background-color: var(--cor-destaque);
+}
+
+#registrar {
+    padding: 10px 20px;
+    background-color: var(--cor-primaria);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+/* Rodapé */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.social-media a {
+    color: white;
+    margin: 0 10px;
+}
